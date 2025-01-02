@@ -1,0 +1,698 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* My CSS ~ @Suthashan (su-n) */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Normalization */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* typograph */
+.heading-title {
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-top: 0.55em;
+}
+.section-title {
+  letter-spacing: 1px;
+}
+
+/* layout */
+body {
+  background: #ffdfdf;
+}
+.heading-container {
+  display: flex;
+  align-items: center;
+}
+.spam-icon {
+  margin-top: 1em;
+  width: 55px;
+  margin-right: 1.5em;
+}
+.webpage-title {
+  background: rgb(36, 36, 36);
+  color: white;
+  padding: 0em 7em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  position: relative;
+}
+.red-block {
+  position: absolute;
+  width: 66px;
+  background: rgb(255, 88, 88);
+  height: 100%;
+  left: 0;
+}
+.mobile-icon {
+  display: none;
+}
+.grid-container {
+  padding: 1em 3em;
+  display: grid;
+  grid-template-columns: 1fr 3.5fr 1.5fr;
+  padding-bottom: 3.5em;
+}
+.dashboard-nav {
+  border-right: 1px solid rgb(106, 106, 106);
+  padding-bottom: 1em;
+}
+.dashboard-nav ul {
+  padding: 0;
+  margin-right: 1em;
+  margin-left: 2em;
+}
+.dashboard-nav ul li {
+  list-style: none;
+  margin-bottom: 3em;
+  padding-top: 3em;
+}
+.dashboard-nav ul li a {
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.dashboard-nav ul:last-child{
+  padding-bottom: 3em;
+}
+.dashboard-nav ul li a.current-page {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-link:hover,
+.nva-link:focus {
+  color: black;
+  font-weight: bold;
+  scale: 1.4;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* triangle style on hover */
+.nav-link:hover::before,
+.nva-link:focus::before {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black; /* Adjust the color to match your design */
+  display: inline-block;
+  transform: rotate(90deg);
+  position: relative;
+  margin-right: 11px;
+  margin-top: -2px;
+  animation: blink 3.3s infinite ease-out;
+}
+
+.spam-detection-analysis-container {
+  padding: 2em;
+}
+.section-title {
+  margin-bottom: 1.5em;
+}
+
+/* Table styling */
+.spam-analysis-table {
+  border: 3px solid black;
+  width: 100%;
+  background: white;
+}
+.table-row-head {
+  display: flex;
+  align-items: center;
+}
+.table-row-head img {
+  margin-right: 0.8em;
+}
+td:not(:last-child) {
+  border-right: 1px solid grey;
+}
+td {
+  border-bottom: 1px solid grey;
+  padding: 1em;
+}
+
+/* Model Performance */
+.model-heading div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flame-logo {
+  margin-top: 1em;
+}
+
+.model-performance {
+  padding-top: 5em;
+}
+
+.output-field {
+  width: 200px;
+  height: 33px;
+  background: white;
+}
+
+.output-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.output-label {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 999px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-container {
+    display: none;
+  }
+  .mobile-icon {
+    display: block;
+    color: #ff8282;
+    margin-left: 3em;
+    margin-top: 0.8em;
+  }
+  .red-block {
+    right: 0;
+  }
+  .webpage-title {
+    padding-right: 1em;
+  }
+  .heading-container {
+    justify-content: space-evenly;
+  }
+}
+
+/* =======================
+      About Page
+==========================*/
+.main {
+  display: grid;
+  grid-template-columns: 1.25fr 2fr;
+  height: 100vh;
+}
+.left-side-container {
+  background: white;
+  padding-top: 2em;
+  font-family: "Inter", sans-serif;
+}
+.about-page-nav {
+  padding: 2em;
+  padding-right: 3em;
+}
+.about-page-nav ul {
+  list-style: none;
+  border-top: 1px solid grey;
+  padding-top: 1em;
+}
+.about-page-nav ul li {
+  padding: 1em 0;
+  text-align: center;
+}
+.about-nav-link {
+  text-decoration: none;
+  color: black;
+}
+.about-nav-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.right-side-container {
+  background: url("/SpamDetectorClient/img/galaxy-img.png");
+  display: flex;
+  flex-direction: column;
+  padding: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card design */
+.card {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 55%;
+  min-width: 400px;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  padding-left: 2em;
+  margin-bottom: 2em;
+  border: none;
+  text-align: left;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.name {
+  font-size: 22px;
+  margin-bottom: 0.25em;
+  letter-spacing: 3px;
+}
+.card:hover,
+.card:focus {
+  cursor: pointer;
+  scale: 1.1;
+  border: 1px solid white;
+}
+.card:hover .github-icon {
+  display: block;
+}
+.logo-container {
+  border: 1px solid black;
+}
+.git-logo {
+  width: 88px;
+}
+
+.card-1 {
+  background: rgb(154, 0, 0);
+}
+.card-1:hover,
+.card-1:focus {
+  box-shadow: 0px 0px 55px rgb(255, 163, 163);
+}
+.card-2 {
+  background: rgb(0, 0, 110);
+}
+.card-2:hover,
+.card-2:focus {
+  box-shadow: 0px 0px 55px rgb(140, 140, 255);
+}
+.card-3 {
+  background: rgb(0, 58, 0);
+}
+.card-3:hover,
+.card-3:focus {
+  box-shadow: 0px 0px 55px rgb(137, 255, 137);
+}
+.card-4 {
+  background: rgb(136, 97, 0);
+}
+.card-4:hover,
+.card-4:focus {
+  box-shadow: 0px 0px 55px rgb(255, 255, 255);
+}
+
+.about-tag {
+  background: black;
+  color: white;
+  padding: 0.5em;
+  width: 222px;
+}
+.project-about-article {
+  padding: 1.5em;
+  padding-top: 3em;
+  line-height: 1.6;
+}
+.second-paragraph {
+  padding-top: 1.5em;
+}
+.about-nav-link {
+  padding: 1em;
+}
+
+/* responsive styling < About Page > */
+
+@media screen and (max-width: 999px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-side-container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* ==========================
+  Drop Box Styling
+=============================*/
+.dropbox {
+  background: rgb(36, 36, 36);
+  padding: 3em 0;
+  margin-top: 3.3em;
+  display: flex;
+  justify-content: center;
+}
+.drop-box-container {
+  width: 52%;
+  margin-left: -144px;
+}
+.submit-files-btn {
+  color: rgb(49, 49, 49);
+  background: #fcbbbb;
+  padding: 1em 2em;
+  border: none;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.submit-files-btn:hover,
+.submit-files-btn:focus {
+  background: #ffa5a5;
+  color: black;
+  border: 2px solid black;
+}
+.drop-box-area {
+  border: 1.5px dashed #ff8282;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  margin-top: 1.5em;
+}
+.dropbox-icon {
+  color: #fcbbbb;
+  margin-right: 2em;
+}
+.dropbox-text {
+  font-size: 23px;
+  letter-spacing: 1.5px;
+}
+.show-dropped-files {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dropped-file {
+  display: flex;
+  width: 333px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2.2em;
+}
+.dropped-file-icon {
+  color: rgb(187, 187, 187);
+}
+.file-name {
+  color: white;
+  font-size: 18px;
+}
+.x-icon {
+  color: #ff8282;
+  cursor: pointer;
+}
+.x-icon:hover {
+  color: rgb(255, 44, 44);
+  scale: 1.25;
+}
+
+@media screen and (max-width: 999px) {
+  .drop-box-container {
+    margin-left: 0;
+    width: 77%;
+  }
+  .drop-box {
+    padding-bottom: 5em;
+  }
+}
+

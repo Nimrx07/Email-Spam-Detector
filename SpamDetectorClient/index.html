@@ -1,0 +1,349 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+<div class="error-msg"></div>
+<!-- vertical black bar -->
+<section class="webpage-title">
+  <div class="red-block"></div>
+  <div class="heading-container">
+    <img
+      src="./img/spam-logo.png"
+      alt="grey spam icon"
+      class="spam-icon"
+    />
+    <h1 class="heading-title">Spam detector dashboard</h1>
+
+    <svg
+      class="mobile-icon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="2em"
+      height="2em"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        d="M3 6h18M3 12h18M3 18h18"
+      />
+    </svg>
+  </div>
+</section>
+
+<section class="grid-container">
+  <div class="nav-container">
+    <!-- navigation -->
+    <nav class="dashboard-nav">
+      <ul>
+        <li>
+          <a href="." class="dashboard current-page nav-link">Home</a>
+        </li>
+        <li>
+          <a href="./about.html" class="About nav-link">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="spam-detection-analysis-container">
+    <h3 class="section-title">Spam Detection Analysis</h3>
+    <table class="spam-analysis-table">
+      <!-- heading row -->
+      <thead>
+      <tr>
+        <td>
+          <div class="table-row-head">
+            <img src="./img/file-img.png" alt="" class="file-icon" />
+            <h5 class="table-row-head-label">File</h5>
+          </div>
+        </td>
+        <td>
+          <div class="table-row-head">
+            <img src="./img/prob-img.png" alt="" class="spam-icon" />
+            <h5 class="table-row-head-label">Spam Probability</h5>
+          </div>
+        </td>
+        <td>
+          <div class="table-row-head">
+            <svg
+              class="class-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="2.2em"
+              height="2.2em"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="currentColor"
+                d="M14 23h8v2h-8zm-4 0h2v2h-2zm4-5h8v2h-8zm-4 0h2v2h-2zm4-5h8v2h-8zm-4 0h2v2h-2z"
+              />
+              <path
+                fill="currentColor"
+                d="M25 5h-3V4a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v1H7a2 2 0 0 0-2 2v21a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2M12 4h8v4h-8Zm13 24H7V7h3v3h12V7h3Z"
+              />
+            </svg>
+            <h5 class="table-row-head-label">Class</h5>
+          </div>
+        </td>
+      </tr>
+      </thead>
+
+      <!-- body row -->
+      <tbody>
+      <tr class="table-body-row">
+        <td class="file-col">
+          <p class="file-text">temp value</p>
+        </td>
+        <td class="spam-prob-col">
+          <p class="prob-text">temp value</p>
+        </td>
+        <td class="class-col">
+          <p class="class-text">temp value</p>
+        </td>
+      </tr>
+      <tr class="table-body-row">
+        <td class="file-col">
+          <p class="file-text">temp value</p>
+        </td>
+        <td class="spam-prob-col">
+          <p class="prob-text">temp value</p>
+        </td>
+        <td class="class-col">
+          <p class="class-text">temp value</p>
+        </td>
+      </tr>
+      <tr class="table-body-row">
+        <td class="file-col">
+          <p class="file-text">temp value</p>
+        </td>
+        <td class="spam-prob-col">
+          <p class="prob-text">temp value</p>
+        </td>
+        <td class="class-col">
+          <p class="class-text">temp value</p>
+        </td>
+      </tr>
+      <tr class="table-body-row">
+        <td class="file-col">
+          <p class="file-text">temp value</p>
+        </td>
+        <td class="spam-prob-col">
+          <p class="prob-text">temp value</p>
+        </td>
+        <td class="class-col">
+          <p class="class-text">temp value</p>
+        </td>
+      </tr>
+      <tr class="table-body-row">
+        <td class="file-col">
+          <p class="file-text">temp value</p>
+        </td>
+        <td class="spam-prob-col">
+          <p class="prob-text">temp value</p>
+        </td>
+        <td class="class-col">
+          <p class="class-text">temp value</p>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Model performance -->
+  <aside class="model-performance">
+    <section class="model-heading">
+      <div class="flex-container">
+        <h3 class="title">Model Performance</h3>
+        <img
+          src="./img/flame-img.png"
+          alt="orange flame logo"
+          class="flame-logo"
+        />
+      </div>
+    </section>
+
+    <div class="accuracy-container output-container">
+      <div class="flex-container">
+        <label for="accuracy-output">Accuracy</label>
+        <output class="accuracy-output output-field" id="accuracy-output"
+        >value</output
+        >
+      </div>
+    </div>
+
+    <div class="precision-container output-container">
+      <div class="flex-container">
+        <label for="precision-output">Precision</label>
+        <output class="precision-output output-field" id="precision-output"
+        >value</output
+        >
+      </div>
+    </div>
+  </aside>
+</section>
+
+<!-- dropbox section -->
+<section class="dropbox">
+  <div class="drop-box-container">
+    <button class="submit-files-btn" id="submit-files-btn">
+      submit files
+    </button>
+    <div class="drop-box-area" id="drop-area">
+      <!-- dropbox icon -->
+      <svg
+        class="dropbox-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="3em"
+        height="3em"
+        viewBox="0 0 256 256"
+      >
+        <path
+          fill="currentColor"
+          d="M236.55 149.42L194.05 120l42.5-29.42a8 8 0 0 0 0-13.16l-52-36a8 8 0 0 0-9.1 0L128 74.27L80.55 41.42a8 8 0 0 0-9.1 0l-52 36a8 8 0 0 0 0 13.16L62 120l-42.5 29.42a8 8 0 0 0 0 13.16l52 36a8 8 0 0 0 9.1 0l47.4-32.85l47.45 32.85a8 8 0 0 0 9.1 0l52-36a8 8 0 0 0 0-13.16M128 146.27L90.05 120l38-26.27L166 120Zm52-88.54L218 84l-38 26.27L142.05 84Zm-104 0L114 84l-38 26.27L38.05 84Zm0 124.54L38.05 156l38-26.27L114 156Zm104 0L142.05 156L180 129.73L218 156Zm-21.53 24.64a8 8 0 0 1-2 11.13l-23.89 16.54a8 8 0 0 1-9.1 0L99.56 218a8 8 0 0 1 9.1-13.16L128 218.27l19.34-13.39a8 8 0 0 1 11.13 2.03"
+        />
+      </svg>
+      <p class="dropbox-text">drop box</p>
+    </div>
+
+    <section class="show-dropped-files">
+      <!-- where user files get show -->
+      <div class="dropped-file">
+        <svg
+          class="dropped-file-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1.15em"
+          height="1.15em"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill="currentColor"
+            d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V4.664a.25.25 0 0 0-.073-.177l-2.914-2.914a.25.25 0 0 0-.177-.073Zm4.48 3.758a.75.75 0 0 1 .755.745l.01 1.497h1.497a.75.75 0 0 1 0 1.5H9v1.507a.75.75 0 0 1-1.5 0V9.005l-1.502.01a.75.75 0 0 1-.01-1.5l1.507-.01l-.01-1.492a.75.75 0 0 1 .745-.755"
+          />
+        </svg>
+        <p class="file-name">file 1</p>
+
+        <svg
+          class="x-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1.3em"
+          height="1.3em"
+          viewBox="0 0 256 256"
+        >
+          <path
+            fill="currentColor"
+            d="M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128L50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z"
+          />
+        </svg>
+      </div>
+
+      <div class="dropped-file">
+        <svg
+          class="dropped-file-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1.15em"
+          height="1.15em"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill="currentColor"
+            d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V4.664a.25.25 0 0 0-.073-.177l-2.914-2.914a.25.25 0 0 0-.177-.073Zm4.48 3.758a.75.75 0 0 1 .755.745l.01 1.497h1.497a.75.75 0 0 1 0 1.5H9v1.507a.75.75 0 0 1-1.5 0V9.005l-1.502.01a.75.75 0 0 1-.01-1.5l1.507-.01l-.01-1.492a.75.75 0 0 1 .745-.755"
+          />
+        </svg>
+        <p class="file-name">file 2</p>
+
+        <svg
+          class="x-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1.3em"
+          height="1.3em"
+          viewBox="0 0 256 256"
+        >
+          <path
+            fill="currentColor"
+            d="M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128L50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z"
+          />
+        </svg>
+      </div>
+    </section>
+  </div>
+</section>
+</body>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+
+<script>
+  async function fetchAccuracy() {
+    try {
+      const response = await fetch('http://localhost:8080/spamDetector-1.0/api/spam/accuracy');
+      const data = await response.json();
+      console.log('Accuracy:', data);
+    } catch (error) {
+      console.error('Error fetching accuracy:', error);
+    }
+  }
+
+  // Call the function when needed
+  fetchAccuracy()
+
+  async function fetchPrecision() {
+    try {
+      const response = await fetch('http://localhost:8080/spamDetector-1.0/api/spam/precision');
+      const data = await response.json();
+      console.log('Precision:', data);
+    } catch (error) {
+      console.error('Error fetching precision:', error);
+    }
+  }
+
+  // Call the function when needed
+  fetchPrecision();
+
+  window.onload = function(){
+    //calls function to fetch data
+    updateTable();
+    updatePrecision();
+    updateAccuracy();
+  }
+</script>
+
+
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</body>
+
+</html>
