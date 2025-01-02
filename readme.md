@@ -1,17 +1,14 @@
 # Documentation of Spam Project
 
 ## Project Description
+This project involves a team of four members, developing a spam detection system capable of accurately classifying emails as spam or legitimate!
 
-    This project involves a team of four members, developing a spam
-    detection system capable of accurately classifying emails as spam or
-    legitimate!
+Team members:
 
-    Team members:
-
-        - Nimra Rehman
-        - Nabila Tabassum
-        - Maheen Zahir
-        - Suthashan Tharmarajah
+- Nimra Rehman
+- Nabila Tabassum
+- Maheen Zahir
+- Suthashan Tharmarajah
 
 ## Front-End
 
